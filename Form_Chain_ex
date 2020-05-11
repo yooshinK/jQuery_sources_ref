@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>
+            <input type="text" />
+            <span></span>
+        </p>
+        <script>
+            $("input").focus( function (e) {
+                $(this).next("span").html('focus Test');
+            }).blur( function(e) {
+                $(this).next("span").html('blur Test');
+            }).change(function(e){
+                alert('change!! '+$(e.target).val());
+            }).select(function(){
+                $(this).next("span").html('select Test');
+            });
+        </script>
+    </body>
+</html>
