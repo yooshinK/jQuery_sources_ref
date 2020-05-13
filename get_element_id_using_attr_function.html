@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <input type="button" id="yooshink" value="my name" />
+       
+        <script>$('input[type="button"]').click( function(e) {
+                var $this = $(e.target);
+                //var id_is;
+                if($this.attr('id')=="yooshink"){
+                	var id_is = $this.attr('id');
+                	alert(id_is+" is a good person");
+                }
+                
+                            
+            }) 
+        </script>
+    </body>
+</html>
